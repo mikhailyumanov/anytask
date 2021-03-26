@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if test -e $ANYBETA_ROOT/sqlite3.db
+then
+  rm $ANYBETA_ROOT/sqlite3.db
+fi
+
 mysql < $ANYBETA_DEPLOY/mysql_config.sql
 
 $ANYBETA_ROOT/anytask/manage.py migrate --no-input

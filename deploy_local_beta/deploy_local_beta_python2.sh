@@ -43,10 +43,10 @@ ANYBETA_crash_on_error
 # CREATE DB
 ###########
 
-ANYBETA_report
-ANYBETA_report "Create test database"
-$ANYBETA_DEPLOY/generate_test_db.sh
-ANYBETA_crash_on_error
+#ANYBETA_report
+#ANYBETA_report "Create test database"
+#$ANYBETA_DEPLOY/generate_test_db.sh
+#ANYBETA_crash_on_error
 
 ANYBETA_report
 ANYBETA_report "Deploy completed!"
